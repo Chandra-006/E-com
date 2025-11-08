@@ -1,0 +1,86 @@
+/* ===== Premium Theme – Vibe Commerce ===== */
+:root{
+  --nav-bg-start:#0E0F19;      /* deep midnight */
+  --nav-bg-end:#1A1C2E;
+  --text-primary:#1E1E2F;
+  --text-muted:#6B7280;
+  --surface:#FFFFFF;
+  --surface-2:#F8FAFC;
+  --indigo:#6366F1;
+  --cyan:#22D3EE;
+  --gold:#F59E0B;
+  --danger:#EF4444;
+  --ring: rgba(99,102,241,.25);
+
+  --radius:16px;
+  --shadow-sm: 0 6px 16px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 24px rgba(0,0,0,.10);
+}
+
+/* Resets */
+body{ color:var(--text-primary); background:var(--surface-2); }
+
+/* Premium Navbar */
+.navbar-premium{
+  background: linear-gradient(90deg,var(--nav-bg-start),var(--nav-bg-end));
+  box-shadow: var(--shadow-sm);
+}
+.navbar-brand{ letter-spacing:.5px; }
+
+/* Search */
+.search-wrap{
+  background:#1F2233; border-radius:999px; padding:8px 14px; min-width:360px;
+  display:flex; align-items:center; gap:10px; color:#C7CEDA;
+}
+.search-wrap input{
+  background:transparent; border:none; outline:none; width:100%; color:#E5E7EB;
+}
+.search-wrap:focus-within{ box-shadow:0 0 0 3px var(--ring); }
+
+/* Gradient CTA */
+.btn-gradient{
+  background: linear-gradient(90deg,var(--indigo),var(--cyan));
+  color:#fff; border:none;
+}
+.btn-gradient:hover{ filter:brightness(1.05); }
+
+/* Hero */
+.hero{
+  background-image: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+}
+
+
+/* Feature bar */
+.feature-pill{
+  background:linear-gradient(90deg, #5B5FEA 0%, #6EE7F2 100%);
+  color:#fff; border-radius:999px; padding:10px 16px; display:inline-flex;
+  align-items:center; gap:10px; font-weight:600;
+}
+
+/* Cards */
+.product-card{
+  background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow-sm);
+  transition:.25s ease; height:100%;
+}
+.product-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.product-img{ height:180px; object-fit:contain; border-radius:12px; background:#FAFBFF; }
+
+.badge-discount{
+  position:absolute; top:12px; left:12px;
+  background: linear-gradient(90deg,#FDBA74,#FDE68A);
+  color:#1E293B; padding:4px 10px; border-radius:999px; font-weight:700; font-size:.8rem;
+}
+
+/* Cart */
+.cart-card{ background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow-sm); }
+.remove-link{ color:var(--danger); cursor:pointer; }
+.remove-link:hover{ text-decoration:underline; }
+
+/* Section titles */
+.section-title{ font-weight:800; letter-spacing:.2px; }
+
+/* Footer */
+.footer{ color:#C7CEDA; background: linear-gradient(90deg,var(--nav-bg-start),var(--nav-bg-end)); }
